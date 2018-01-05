@@ -1,0 +1,36 @@
+<form action="#">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>登录</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-input-container class='fill-width'>
+        <mat-placeholder>请输入邮箱</mat-placeholder>
+        <input matInput type="email" name='email'>
+      </mat-input-container>
+      <mat-input-container class='fill-width'>
+        <mat-placeholder>请输入密码</mat-placeholder>
+        <input matInput type="password" name='password'>
+      </mat-input-container>
+      <button mat-raised-button color='primary' type='button'>登录</button>
+    </mat-card-content>
+    <mat-card-actions class='text-right'>
+      <p>还没有账户?
+        <a href="">注册账户</a>
+      </p>
+      <p>忘记密码?
+        <a href="">找回密码</a>
+      </p>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card>
+      <mat-card-header>
+        <mat-card-title>每日佳句</mat-card-title>
+        <mat-card-subtitle>我的存在必定有意义！我知道我会成为一个与众不同的人！</mat-card-subtitle>
+      </mat-card-header> 
+      <img src="/assets/quote_fillback.jpg" mat-card-image>
+      <mat-card-content>
+          My existence is not without reason! I know that I could be a quite a different person!
+      </mat-card-content>
+    </mat-card>
+</form>
