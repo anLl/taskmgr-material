@@ -5,6 +5,8 @@ export const svgRegistry = (ir:MatIconRegistry,ds:DomSanitizer)=>{
     const imgDir = `assets/img`;
     const daysDir = `${imgDir}/days`;
     const sidebarDir = `${imgDir}/sidebar`;
+    const avatarDir = `${imgDir}/avatar`;
+    ir.addSvgIconSetInNamespace('avatars',ds.bypassSecurityTrustResourceUrl(`${avatarDir}/avatars.svg`))
     ir.addSvgIcon('month',ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/month.svg`));
     ir.addSvgIcon('week',ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/week.svg`));
     ir.addSvgIcon('day',ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/day.svg`));

@@ -1,0 +1,23 @@
+<form>
+  <h2 mat-dialog-title>新建项目</h2>
+  <mat-dialog-content>
+    <mat-input-container class='fill-width'>
+      <mat-placeholder>项目名称</mat-placeholder>
+      <input matInput type="text" name='projectName'>
+    </mat-input-container>
+    <mat-input-container class='fill-width'>
+      <mat-placeholder>项目描述</mat-placeholder>
+      <textarea matInput name="" id="" cols="30" rows="5"></textarea>
+    </mat-input-container>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button type='button' mat-raised-button color='primary' (click)='onSave()'>
+      <mat-icon>save</mat-icon>
+      <span>保存</span>
+    </button>
+    <button type='button' mat-raised-button mat-dialog-close>
+      <mat-icon>close</mat-icon>
+      <span>关闭</span>
+    </button>
+  </mat-dialog-actions>
+</form>
