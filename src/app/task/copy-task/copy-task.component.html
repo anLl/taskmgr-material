@@ -1,13 +1,11 @@
 <form>
-  <h2 mat-dialog-title>{{title}}</h2>
+  <h2 mat-dialog-title>移动本列表所有内容</h2>
   <mat-dialog-content>
     <mat-input-container class='fill-width'>
-      <mat-placeholder>项目名称</mat-placeholder>
-      <input matInput type="text" name='projectName'>
-    </mat-input-container>
-    <mat-input-container class='fill-width'>
-      <mat-placeholder>项目描述</mat-placeholder>
-      <textarea matInput name="" id="" cols="30" rows="5"></textarea>
+      <mat-placeholder>请选择要移动的目标</mat-placeholder>
+      <mat-select>
+        <mat-option *ngFor='let list of lists' [value]='list.name'>{{list.name}}</mat-option>
+      </mat-select>
     </mat-input-container>
   </mat-dialog-content>
   <mat-dialog-actions>

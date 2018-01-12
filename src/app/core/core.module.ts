@@ -6,13 +6,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { svgRegistry } from '../utils/svg.utils'
-import { LoginModule } from '../login/login.module';
-import { ProjectModule } from '../project/project.module';
 @NgModule({
   imports: [
-    SharedModule,
-    LoginModule,
-    ProjectModule
+    SharedModule
   ],
   exports: [HeaderComponent, FooterComponent, SidebarComponent],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent]

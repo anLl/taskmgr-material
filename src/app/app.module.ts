@@ -7,6 +7,12 @@ import { MatSidenavModule } from '@angular/material';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module'
+import { TaskModule } from './task/task.module';
+import { LoginModule } from './login/login.module';
+import { ProjectModule } from './project/project.module';
+
+import 'hammerjs';
+import { DemoModule } from './demo/demo.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +24,10 @@ import { AppRoutingModule } from './app-routing.module'
     BrowserAnimationsModule,
     MatSidenavModule,
     AppRoutingModule,
+    TaskModule,
+    LoginModule,
+    ProjectModule,
+    DemoModule,
     CoreModule
   ],
   providers: [],

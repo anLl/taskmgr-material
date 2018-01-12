@@ -8,16 +8,18 @@ import {MAT_DIALOG_DATA,MatDialogRef} from '@angular/material';
 })
 export class NewProjectComponent implements OnInit {
 
+  title:string = '';
+
   constructor(
     @Inject(MAT_DIALOG_DATA) private data,
     private mdf:MatDialogRef<NewProjectComponent>
   ) { }
 
   ngOnInit() {
-    console.log(this.data.dark)
+    this.title = this.data.title
   }
   onSave(){
-    this.mdf.close('I received your message');
+    
   }
 
 }
