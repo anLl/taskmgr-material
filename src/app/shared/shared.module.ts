@@ -17,9 +17,12 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatRadioModule,
-  MatSelectModule
+  MatSelectModule,
+  MatSidenavModule,
 } from '@angular/material';
-import { ComfirmDialogComponent } from './comfirm-dialog/comfirm-dialog.component'
+import { ComfirmDialogComponent } from './comfirm-dialog/comfirm-dialog.component';
+import 'hammerjs';
+import { DirectiveModule } from '../directive/directive.module';
 
 @NgModule({
   imports: [
@@ -40,7 +43,9 @@ import { ComfirmDialogComponent } from './comfirm-dialog/comfirm-dialog.componen
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSidenavModule,
+    DirectiveModule
   ],
   exports: [
     CommonModule,
@@ -60,7 +65,9 @@ import { ComfirmDialogComponent } from './comfirm-dialog/comfirm-dialog.componen
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSidenavModule,
+    DirectiveModule
   ],
   declarations: [ComfirmDialogComponent],
   entryComponents:[ComfirmDialogComponent]

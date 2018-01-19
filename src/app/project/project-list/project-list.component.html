@@ -1,10 +1,8 @@
-<app-project-item *ngFor='let project of projects' class='card' [item]='project'
- (onInvite)='launchInviteDialog()'
- (onEdit)='launchEditDialog()'
- (onDel)='launchDelDialog()'
- >
-
-</app-project-item>
+<div class='listContainer' [@listAnim]='projects.length'>
+  <app-project-item *ngFor='let project of projects' class='card' [item]='project' (onInvite)='launchInviteDialog()' (onEdit)='launchEditDialog()'
+    (onDel)='launchDelDialog(project)'>
+  </app-project-item>
+</div>
 <button mat-fab class='fab-button' type='button' (click)='openNewProjectDialog()'>
   <mat-icon>add</mat-icon>
 </button>

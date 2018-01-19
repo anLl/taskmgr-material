@@ -6,13 +6,12 @@ import { AppComponent } from './app.component';
 import { MatSidenavModule } from '@angular/material';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module'
 import { TaskModule } from './task/task.module';
 import { LoginModule } from './login/login.module';
 import { ProjectModule } from './project/project.module';
 
-import 'hammerjs';
 import { DemoModule } from './demo/demo.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,13 +21,13 @@ import { DemoModule } from './demo/demo.module';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
-    AppRoutingModule,
+    SharedModule,
     TaskModule,
     LoginModule,
     ProjectModule,
+    CoreModule,
     DemoModule,
-    CoreModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

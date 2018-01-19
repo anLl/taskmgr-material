@@ -19,7 +19,7 @@ export class NewProjectComponent implements OnInit {
     this.title = this.data.title
   }
   onSave(){
-    
+    this.mdf.close('新建项目');
   }
 
 }

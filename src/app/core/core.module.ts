@@ -6,11 +6,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { svgRegistry } from '../utils/svg.utils'
+import { AppRoutingModule } from '../app-routing.module';
+
 @NgModule({
   imports: [
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
-  exports: [HeaderComponent, FooterComponent, SidebarComponent],
+  exports: [HeaderComponent, FooterComponent, SidebarComponent,AppRoutingModule],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent]
 })
 export class CoreModule {
