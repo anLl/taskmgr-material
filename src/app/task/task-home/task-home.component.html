@@ -1,5 +1,5 @@
 <div class='task-lists'>
-  <app-task-list class='list-container' *ngFor='let list of lists'>
+  <app-task-list class='list-container' *ngFor='let list of lists' app-droppable [dropCalss] = "'dragEnd'" >
     <app-task-header [header]='list.name'
      (newTaskEvent)='launchNewTask()' 
      (moveTaskEvent)='launchMoveTask()'
